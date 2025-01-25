@@ -5,15 +5,80 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(252 123 122/ 84%) 20%,
+    rgb(255 180 161 / 79%) 100%
+  );
+}
 .container {
   text-align: center;
+  padding: 30px;
+}
+
+.img-top {
+  position: absolute;
+  top: -72px;
+  left: 258px;
+  width: 222px;
+  height: 341px;
+  z-index: -1;
+  opacity: 0.3;
+  transform: rotate(109deg);
+}
+
+.img-bottom {
+  position: absolute;
+  bottom: -38px;
+  right: -51px;
+  width: 500px;
+  height: 500px;
+  opacity: 0.7;
+}
+
+.title {
+  font-family: "Dancing Script", serif;
+  margin-bottom: 10px;
+  font-size: 52px;
+  /* color: rgb(241 128 128); */
+  color: white;
+}
+
+.text-input {
+  min-width: 250px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: rgb(241 128 128);
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  border: transparent;
+  /* outline: none; */
+  background-color: rgb(241 128 128);
+  font-size: 16px;
+  color: white;
+}
+
+.button:active {
+  background-color: white;
+  color: rgb(241 128 128);
 }
 
 .tasks-list {
-  font-size: 20px;
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+  list-style: none;
 }
 
-.active {
+.done {
   text-decoration: line-through;
-  color: rgb(111, 111, 111);
+  color: rgb(255 216 216);
 }

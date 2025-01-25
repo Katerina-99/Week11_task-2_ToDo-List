@@ -13,7 +13,7 @@ const createTask = () => {
 
 const checkTask = (evt) => {
   if (evt.target.tagName === "LI") {
-    evt.target.classList.toggle("active");
+    evt.target.classList.toggle("done");
   }
 };
 
