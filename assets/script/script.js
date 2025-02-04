@@ -6,6 +6,9 @@ const createTask = () => {
   const taskText = taskInput.value;
   const newTask = document.createElement("li");
   newTask.textContent = taskText;
+  if (newTask.textContent === "") {
+    alert("Поле пустое");
+  }
   tasksList.appendChild(newTask);
 
   taskInput.value = "";
